@@ -1,0 +1,352 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: garyl
+ * Date: 2018/5/2
+ * Time: 0:13
+ */
+
+namespace CoolBundle\Document;
+
+use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
+
+/**
+ * @MongoDB\Document
+ */
+class Candidates
+{
+    /**
+     * @MongoDB\Id
+     */
+    protected $id;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $name;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $sex;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $ethnic;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $city;
+
+    /**
+     * @MongoDB\Field(type="date")
+     */
+    protected $birthday;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $mobile;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $address;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $workYear;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $marriage;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $child;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $plan;
+
+    /**
+     * @MongoDB\Field(type="date")
+     */
+    protected $eduDate1a;
+
+    /**
+     * @MongoDB\Field(type="date")
+     */
+    protected $eduDate1b;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $type1;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $education1;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $school1;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $major1;
+
+    /**
+     * @MongoDB\Field(type="date")
+     */
+    protected $eduDate2a;
+
+    /**
+     * @MongoDB\Field(type="date")
+     */
+    protected $eduDate2b;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $type2;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $education2;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $school2;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $major2;
+
+    /**
+     * @MongoDB\Field(type="date")
+     */
+    protected $eduDate3a;
+
+    /**
+     * @MongoDB\Field(type="date")
+     */
+    protected $eduDate3b;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $type3;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $education3;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $school3;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $major3;
+
+    /**
+     * @MongoDB\Field(type="date")
+     */
+    protected $wdate1a;
+
+    /**
+     * @MongoDB\Field(type="date")
+     */
+    protected $wdate1b;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $wtype1;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $company1;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $title1;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $status1;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $salary1;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $prove1;
+
+    /**
+     * @MongoDB\Field(type="date")
+     */
+    protected $wdate2a;
+
+    /**
+     * @MongoDB\Field(type="date")
+     */
+    protected $wdate2b;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $wtype2;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $company2;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $title2;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $status2;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $salary2;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $prove2;
+
+    /**
+     * @MongoDB\Field(type="date")
+     */
+    protected $wdate3a;
+
+    /**
+     * @MongoDB\Field(type="date")
+     */
+    protected $wdate3b;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $wtype3;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $company3;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $title3;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $status3;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $salary3;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $prove3;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $family1;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $fname1;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $fwork1;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $fmobile1;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $family2;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $fname2;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $fwork2;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $fmobile2;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $function;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $employ_type;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $position;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $salary_requirement;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $availability;
+}
