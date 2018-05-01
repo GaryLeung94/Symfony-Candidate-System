@@ -16,12 +16,9 @@ class DefaultController extends Controller
     /**
      * @Route("/", name="homepage")
      */
-    public function indexAction(Request $request)
+    public function indexAction()
     {
-        // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-        ]);
+        return $this->render('default/index.html.twig');
     }
 
     /**
@@ -39,8 +36,36 @@ class DefaultController extends Controller
                     '女' => '女',
                 ),
             ))
+            ->add('ethnic', TextType::class, array('required' => false))
+            ->add('city', TextType::class, array('required' => false))
             ->add('birthday', DateType::class, array(
                 'widget' => 'single_text',
+                'required' => false,
+            ))
+            ->add('mobile', TextType::class, array('required' => false))
+            ->add('address', TextType::class, array('required' => false))
+            ->add('workYear', TextType::class, array('required' => false))
+            ->add('marriage', ChoiceType::class, array(
+                'choices' => array(
+                    '未婚' => '未婚',
+                    '已婚' => '已婚',
+                    '离异' => '离异',
+                    '丧偶' => '丧偶',
+                )
+            ))
+            ->add('child', ChoiceType::class, array(
+                'choices' => array(
+                    '未育' => '未育',
+                    '在孕' => '在孕',
+                    '已育' => '已育',
+                )
+            ))
+            ->add('plan', choiceType::class, array(
+                'choices' => array(
+                    '暂无' => '暂无',
+                    '1年内' => '1年内',
+                    '3年内' => '3年内',
+                )
             ))
             ->add('save', SubmitType::class, array('label' => '提交'))
             ->getForm();
@@ -62,4 +87,20 @@ class DefaultController extends Controller
             ));
     }
 
+//    public function update($candidateId)
+//    {
+//        $candidate = $this->get('doctrine_mongodb')
+//            ->getRepository('Candidates')
+//            ->find($candidateId);
+//
+//        if (!$candidate) {
+//            throw $this->createNotFoundException(
+//                'No product found for id '.$candidateId
+//            );
+//        }
+//
+//        $candidate->get
+//
+//    }
+//
 }
