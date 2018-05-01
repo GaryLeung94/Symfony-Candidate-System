@@ -46,7 +46,7 @@ doctrine_mongodb:
     document_managers:
         default:
             auto_mapping: true
-            
+
 doctrine:
     dbal:
         driver: pdo_mysql
